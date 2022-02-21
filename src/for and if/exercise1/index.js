@@ -4,8 +4,10 @@ const even = []
 
 for (let item of numbers) {
     console.log("item:", item);
+if (item%2===1) {odd.push(item)}
+else {even.push(item)}
 
-    // Put your code here
+   
 
 }
 
