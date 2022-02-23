@@ -1,4 +1,6 @@
-
+function power (numero,elevadoa = 1/2){
+    return numero**elevadoa
+}
 // Put your code here
 
 console.log(power(25))
