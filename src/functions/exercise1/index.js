@@ -5,12 +5,22 @@ const numbers4 = [22,9,6,8,5,7,8,9,12,11];
 
 
 function minorValue(array) {
-    const menor = Math.min(...array) //Con la funcion Math.min Math.max se obtiene el valor < o > de un array.
-    return menor                    // se añade ... porque si no da NaN.
+    let valor = Infinity
+    for (idx=0; idx < array.length; idx++){
+        if (array[idx] < valor){
+            valor = array[idx]
+            
+        }
+    }
 
-        // Put your code here
- 
+return valor
+
 }
+    
+//Forma alternativa:
+// const menor = Math.min(...array) //Con la funcion Math.min Math.max se obtiene el valor < o > de un array.
+//return menor                    // se añade ... porque si no da NaN.
+
 const minor1 = minorValue(numbers1);
 console.log(minor1);
 console.log(minorValue(numbers2));
