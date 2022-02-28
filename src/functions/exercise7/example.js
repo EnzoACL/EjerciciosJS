@@ -9,6 +9,10 @@ function minorInRange (start, end, array) {
     for (let idx = start+1; idx < end; idx++) {
         if ( array[minorIdx] > array[idx] ) {
             minorIdx = idx;
+            const prueba13="prueba13"
+            console.log(prueba13)
+            console.log(idx)
+            console.log(array[idx])
         }
     }
     return minorIdx
@@ -22,6 +26,12 @@ function swap (idx1, idx2, array) {
 
 function sort (array, start = 0) {
     let minorIdx = minorInRange(start, array.length, array);
+    const prueba25 = "Prueba25"
+   console.log(prueba25) 
+   console.log(array[minorIdx])
+   console.log(minorIdx)
+   console.log(start)
+   console.log(numbers)
     if ( minorIdx > start ) swap(start, minorIdx, array);
     if ( start < array.length ) sort(array, ++start)
 }

@@ -3,7 +3,7 @@ function minorInRange (posicion1,posicion2,numbers) {
 
     // Put your code here
     let valor = Infinity
-    for (idx=posicion1; idx < posicion2; idx++){
+    for (idx=posicion1; idx <= posicion2; idx++){
         if (numbers[idx] < valor ){
             valor = numbers[idx] 
         }
