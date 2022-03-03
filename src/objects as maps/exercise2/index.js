@@ -21,33 +21,27 @@ const chrono = [
     },
 ]
 //console.log("prueba1", chrono[0])
-//console.log("prueba2", chrono[0].time)
+//console.log("prueba2", chrono[abc+1].time)
 
 // Put your code here
 function sort (){
-    for (isx=0; isx < chrono.length; isx++){
-        
-        for(idx=1; idx < chrono.length; idx++){
-            
-            if (chrono[isx].time > chrono[idx].time){  
-                let temporal=null;
-                temporal=chrono[isx];
-                chrono[isx]=chrono[idx];
-                chrono[idx]=temporal;
-                
-                
-                
+    for (out=0; out < chrono.length; out++){
+        for(idx=out+1; idx < chrono.length; idx++){ 
+            if ( chrono[out].time > chrono[idx].time ){
+                let temp = null;
+                temp = chrono[out];
+                chrono[out] = chrono[idx];
+                chrono[idx] = temp;
             }
-                
-                
         }
-                 
-                   
     }
-return console.log(chrono)         
-}     
+return chrono
+}
+   
+    
 
 
 console.log( chrono)
-sort (chrono)
+sort(chrono)
 console.log(JSON.stringify(chrono))
+
