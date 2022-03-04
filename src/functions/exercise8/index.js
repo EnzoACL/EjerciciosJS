@@ -2,14 +2,24 @@ numbers = [4,2,9,6,1,0,3,6,5,2,9];
 
 function aGreatherThanB (a, b) {
     // Put your code here
+    if (a > b){
+        return true }
+        else {return false}
+    
 }
 
 function bGreatherThanA (a,b) {
     // Put your code here
-}
+    if (b > a) {return true} 
+    else {return false}
+}   
 
-function swap (idxA, idxB, array) {
-    // Put your code here
+
+function swap (posicion1,posicion2,numbers){
+    let temporal = null;
+    temporal = numbers[posicion1];
+    numbers[posicion1] = numbers[posicion2];
+    numbers[posicion2] = temporal;
 }
 
 function sort (comparator, array) {
