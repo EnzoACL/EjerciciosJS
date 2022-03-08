@@ -26,6 +26,7 @@ console.log(student);
 // Adding new properties
 student['nacimiento'] = 1982;
 console.log(student);
+console.log(student.nacimiento)
 
 // Accesing arbitrary properties
 const property = "nacimiento"
