@@ -17,6 +17,6 @@ for (let numeros=1;numeros<11;numeros++){
     let contadortotal=1
     for (let multi=1; multi<11;multi++){
         let res = numeros*multi
-       console.log(`${numeros}*${contadortotal++}: ${res}`);
+       console.log(`${numeros} * ${contadortotal++} = ${res}`);
     }
 }

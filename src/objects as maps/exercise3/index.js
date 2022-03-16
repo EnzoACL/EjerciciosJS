@@ -22,17 +22,17 @@ const people = [
 ]
 
 // Your code here
-function aFasterThanB (runnerA, runnerB) {
+function aFasterThanB (a,b) {
     // Put your code here
-    if (runnerA.time < runnerB.time){
+    if (a.time < b.time){
         return true }
         else {return false}
     
 }
 
-function bFasterThanA (runnerA,runnerB) {
+function bFasterThanA (a,b) {
     // Put your code here
-    if (runnerB.time < runnerA.time) {return true} 
+    if (b.time < a.time) {return true} 
     else {return false}
 }   
 
@@ -51,12 +51,16 @@ function sort (comparator, array) {
         }
     }
 }
-aFasterThanB(people);
-console.log("prueba0",people);
+
+console.log("Sin ordenar",JSON.stringify(people));
+console.log('l')
+console.log('l')
 sort(aFasterThanB, people);
-console.log("prueba1",people);
+console.log("Mayor a menor",JSON.stringify(people));
+console.log('l')
+console.log('l')
 sort(bFasterThanA, people);
-console.log("prueba2",people);
+console.log("Menor a",JSON.stringify(people));
 
 console.log(sort(aFasterThanB,people));
-console.log(sort(bFasterThanA, people));
+console.log(sort(bFasterThanA,people));

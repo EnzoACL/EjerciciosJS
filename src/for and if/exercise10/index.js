@@ -16,6 +16,9 @@ for (let idx = 0; idx < numbers.length;idx++){
 }
 
 
+numbers.sort()
+console.log("Con el metodo sort: ",numbers)
+
 
 // Put your code here
 //Compara el primer elemento del array con cada uno de los siguientes.
